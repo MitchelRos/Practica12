@@ -19,11 +19,11 @@ use App\Http\Controllers\Admin\ContabilidadController;
 Route::get('/', function () {return view('welcome');});
 
 // Rutas de Clientes
-Route::get('/admin/clientes', [ClientesController::class, 'index'])->name('admin.clientes.index');
+Route::get('/adb/clientes', [ClientesController::class, 'index'])->name('adb.clientes');
 
 // Rutas de Facturación
-Route::get('/admin/facturacion', [FacturacionController::class, 'index'])->name('admin.facturacion.index');
+Route::get('/adb/facturacion', [FacturacionController::class, 'index'])->name('adb.facturacion');
 
 // Rutas de Contabilidad
-Route::get('/admin/contabilidad', [ContabilidadController::class, 'index'])->name('admin.contabilidad.index');
+Route::get('/adb/contabilidad', [ContabilidadController::class, 'index'])->name('adb.contabilidad');
 
